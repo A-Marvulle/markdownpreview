@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f0f0f0;
+}
+#editor {
+  resize: none;
+  background-color: #e5e5e5 ;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: #e5e5e5;
+  padding: 5px;
+  line-height: 1.2;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Source Code Pro', monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#preview table {
+  border-collapse: collapse;
+}
+#preview td,
+#preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
 }
